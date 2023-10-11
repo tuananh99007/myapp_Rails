@@ -1,7 +1,6 @@
 class User < ApplicationRecord
-    attribute :email, :string
-    attribute :password, :string
-    attribute :name, :string
-    attribute :phone, :string
-    attribute :address, :string  
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 end

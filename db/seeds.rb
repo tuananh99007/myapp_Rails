@@ -6,22 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 # Tạo dữ liệu mẫu cho bảng "users"
-  User.create!(
-    email: 'tuananh99007@example.com',
-    password: '123456',
-    name: 'TuanAnh',
-    phone: '0343161499',
-    address: 'Ha Noi'
-  )
-  
-  User.create!(
-    email: 'user2@example.com',
-    password: '123456',
-    name: 'User2',
-    phone: '123456789',
-    address: 'Ho Chi Minh'
-  )
-  
   # Tạo dữ liệu mẫu cho bảng "categories"
   Category.create!(name: 'Category 1')
   Category.create!(name: 'Category 2')

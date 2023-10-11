@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% if user_signed_in? %>
+      <div id='wrapper'>
+        <%= render partial: 'index/header' %>
+        <%= render partial: 'index/menu' %>
+        <div id="page-wrapper">
+          <div id="page-inner">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    <% else %>
+      <div class="centered-content">
+        <%= yield %>
+       </div>
+    <% end %>
   </body>
 </html>
